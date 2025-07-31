@@ -3,8 +3,8 @@
 ## 1. Requirement
 - [x] Generate random number 1-100
 - [x] Accept user input
-- [ ] Use while loop to compare the input number with the random generated number
-- [ ] provide feedback (too high/low)
+- [x] Use while loop to compare the input number with the random generated number
+- [x] provide feedback (too high/low)
 - [ ] Count attempts 
 - [ ] Ask to play again
 
@@ -19,5 +19,5 @@
 
 ## 4. Testing
 - Test cases tried
-- Bugs found and fixed
+- [ ] there is bug in while loop, it doesn't end when user correctly guessed the number
 - final results
