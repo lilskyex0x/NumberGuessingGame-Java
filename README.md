@@ -1,8 +1,9 @@
 # Number Guessing Game - Development Process
 
 ## 1. Requirement
-- [ ] Generate random number 1-100
-- [ ] Accept user input
+- [x] Generate random number 1-100
+- [x] Accept user input
+- [ ] Use while loop to compare the input number with the random generated number
 - [ ] provide feedback (too high/low)
 - [ ] Count attempts 
 - [ ] Ask to play again
