@@ -7,16 +7,27 @@ public class NumberGuessingGame {
 		// TODO Auto-generated method stub
 		System.out.println("Welcome to my Number Guessing Game!");
 		
+		
+		Random ranNum = new Random();
+		int secretNum = ranNum.nextInt(100);
+		System.out.println("Computer: I picked a number between 1 to 100, try to guess it");
+		
 		Scanner input = new Scanner(System.in);
-		System.out.println("Enter any number: ");
-		int num = input.nextInt();
-		System.out.println("Your number: " + num);
-		
-		Random genNum = new Random();
-		int ranNum = genNum.nextInt(100);
-		System.out.println("Random number: "+ ranNum);
+		int guess = 0;
 		
 		
+		while(guess != secretNum) {
+			System.out.println("Guess a number: ");
+			int guessNum = input.nextInt();
+			
+			if(guessNum > secretNum) {
+				System.out.println("your number is too high");
+			} else if (guessNum < secretNum) {
+				System.out.println("your number is too low");
+			} else {
+				System.out.println("Correct!");
+			}
+		}
 		
 		input.close();
 	}
