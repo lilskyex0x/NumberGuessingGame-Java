@@ -14,18 +14,20 @@ public class NumberGuessingGame {
 		
 		Scanner input = new Scanner(System.in);
 		int guess = 0;
-		
+		int counter = 0;
 		
 		while(guess != secretNum) {
 			System.out.println("Guess a number: ");
-			int guessNum = input.nextInt();
+			guess = input.nextInt();
 			
-			if(guessNum > secretNum) {
+			if(guess > secretNum) {
 				System.out.println("your number is too high");
-			} else if (guessNum < secretNum) {
+			} else if (guess < secretNum) {
 				System.out.println("your number is too low");
 			} else {
 				System.out.println("Correct!");
+				counter++;
+				System.out.println("Game Played: "+counter);
 			}
 		}
 		
