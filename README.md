@@ -15,6 +15,7 @@
 
 ## 3. Implementation
 - Code snippet or notes about challenges
+- Fixed the bug for infinite loop happening when the answer is correct.
 - What worked/didn't work
 
 ## 4. Testing
