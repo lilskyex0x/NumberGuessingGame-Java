@@ -11,15 +11,14 @@
 
 ## 2. Planning
 - Main game loop structure
-- Variable Needed
-- Need to rearrange the print messages
+- Variable Needed.
+- Need to rearrange the print messages.
 
 ## 3. Implementation
-- Code snippet or notes about challenges
+- Code snippet or notes about challenges.
 - Fixed the bug for infinite loop happening when the answer is correct.
-- What worked/didn't work
+- Fixed the loop for the correct number was guessed every time user entered an input.
 
 ## 4. Testing
-- Test cases tried
-- [ ] there is bug in while loop, it doesn't end when user correctly guessed the number
-- final results
+- [x] there is bug in while loop, it doesn't end when user correctly guessed the number
+- [x] the guessing game is working properly however additional features can be implemented.
