@@ -5,13 +5,14 @@
 - [x] Accept user input
 - [x] Use while loop to compare the input number with the random generated number
 - [x] provide feedback (too high/low)
-- [ ] Count attempts 
-- [ ] Ask to play again
+- [x] Count attempts 
+- [x] Ask to play again
+- [ ] Current issue for the input number is bugged. It always showing correct even though the number is wrong and the game is finished as soon as the number is entered. 
 
 ## 2. Planning
 - Main game loop structure
 - Variable Needed
-- Error Handling approach
+- Need to rearrange the print messages
 
 ## 3. Implementation
 - Code snippet or notes about challenges
