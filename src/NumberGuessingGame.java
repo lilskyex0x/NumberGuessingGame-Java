@@ -10,12 +10,12 @@ public class NumberGuessingGame {
 		
 		do {
 			int secretNum = ranNum.nextInt(100);
+			System.out.println("Computer: I picked a number between 1 to 100, try to guess it");
 			int guess = 0;
 			int counter = 0;
 			boolean win = false;
 			
 			while (win == false) {
-				System.out.println("Computer: I picked a number between 1 to 100, try to guess it");
 				counter++;
 				guess = input.nextInt();
 				
