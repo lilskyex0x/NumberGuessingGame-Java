@@ -1,10 +1,8 @@
 import java.util.Random;
 import java.util.Scanner;
-import java.util.random.*;
 public class NumberGuessingGame {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		System.out.println("Welcome to my Number Guessing Game!");
 		Scanner input = new Scanner(System.in);
 		Random ranNum = new Random();
@@ -23,19 +21,17 @@ public class NumberGuessingGame {
 				
 				if(guess == secretNum) {
 					win = true;
+					System.out.println("Congratulation your number is correct!");
+					System.out.println("Your number was " + guess);
+					System.out.println("It took you " + counter + " tried");
+					playAgain = input.nextLine();
+					System.out.println("Would you like to play another game? :" + playAgain);
+					playAgain = input.nextLine();
 				} else if (guess > secretNum) {
 					System.out.println("your number is too high");
 				} else if (guess < secretNum) {
 					System.out.println("your number is too low");
 				}
-				
-				System.out.println("Congratulation your number is correct!");
-				System.out.println("Your number was " + guess);
-				System.out.println("It took you " + counter + " tried");
-				
-				playAgain = input.nextLine();
-				System.out.println("Would you like to play another game? :" + playAgain);
-				playAgain = input.nextLine();
 				
 			}
 			
