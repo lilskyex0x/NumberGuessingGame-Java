@@ -15,12 +15,7 @@ public class NumberGuessingGame {
 			int guess = 0;
 			int counter = 0;
 			boolean win = false;
-			
-			System.out.println("Select difficulty level");
-			System.out.println("1. Easy");
-			System.out.println("2. Normal");
-			System.out.println("3. Hard");
-			gameMode = input.nextInt();
+			gameMode = chooseDifficulty(input);
 			
 			if (gameMode == 1) {
 				int easyNum = ranNum.nextInt(10);
@@ -95,39 +90,20 @@ public class NumberGuessingGame {
 				}
 			}
 			
-			
-//			int secretNum = ranNum.nextInt(100);
-//			System.out.println("Computer: I picked a number between 1 to 100, try to guess it");
-//			int guess = 0;
-//			int counter = 0;
-//			boolean win = false;
-			
-//			while (win == false) {
-//				counter++;
-//				guess = input.nextInt();
-//				
-//				if(guess == secretNum) {
-//					win = true;
-//					System.out.println("Congratulation your number is correct!");
-//					System.out.println("Your number was " + guess);
-//					System.out.println("It took you " + counter + " tried");
-//					playAgain = input.nextLine();
-//					System.out.println("Would you like to play another game? :" + playAgain);
-//					playAgain = input.nextLine();
-//				} else if (guess > secretNum) {
-//					System.out.println("your number is too high");
-//				} else if (guess < secretNum) {
-//					System.out.println("your number is too low");
-//				}
-//				
-//			}
-			
-			
 		} while (playAgain.equalsIgnoreCase("yes"));
 		
 		System.out.println("Ok maybe next time!");
 		System.exit(0);
-		
 		input.close();
+	}
+
+	private static int chooseDifficulty(Scanner input) {
+		int gameMode;
+		System.out.println("Select difficulty level");
+		System.out.println("1. Easy");
+		System.out.println("2. Normal");
+		System.out.println("3. Hard");
+		gameMode = input.nextInt();
+		return gameMode;
 	}
 }
