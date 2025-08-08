@@ -8,10 +8,13 @@
 - [x] Count attempts 
 - [x] Ask to play again
 - [x] Current issue for the input number is bugged. It always showing correct even though the number is wrong and the game is finished as soon as the number is entered. 
-- [ ] The program is executing the question every time user guessed number is wrong.
+- [x] The program is executing the question every time user guessed number is wrong.
+- [ ] Get user input ( ask user with integer input )
+- [ ] Build different number range for each input value using if statement
 
 ## 2. Planning
 - Main game loop structure
+- Add difficulty level
 - Variable Needed.
 - Need to rearrange the print messages.
 - Move the question message outside of the if else statement. 
